@@ -1,0 +1,358 @@
+/* MISC */
+
+:root {
+  --color-primary: #00ad6a;
+  --color-secondary: #eafaf1;
+  --color-accent: #1fe374;
+  --color-dark: #080c16;
+  --color-light: #d6dae5;
+  --color-background: #fcfcfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+
+body {
+  color: var(--color-dark);
+  background: var(--color-background);
+}
+
+/* HEADER & NAVBAR */
+
+header {
+  background: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+nav ul li button {
+  border: 2.5px solid var(--color-primary);
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+/* PRICING SECTION */
+
+.pricing-section {
+  height: 100%;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pricing-section-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pricing-section-header p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  width: 57.5%;
+}
+
+.pricing-section-information-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pricing-section-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 40%;
+  color: var(--color-dark);
+}
+
+.pricing-section-information h4 {
+  font-weight: 600;
+  width: 10%;
+  color: var(--color-primary);
+  text-align: justify;
+  font-size: 100px;
+}
+
+.pricing-section-information ul {
+  list-style-position: inside;
+}
+
+.pricing-section-information ul li {
+  margin-top: 5px;
+  color: gray;
+}
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .card h4 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  
+  
+  .card ul {
+    text-align: left;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .card ul li {
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+  }
+  
+  .card button {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+  
+  .card button:hover {
+    background: var(--color-accent);
+  }
+
+
+  .faq {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .faq h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .faq-column {
+    flex: 1;
+  }
+  
+  .faq-item {
+    margin-bottom: 2rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-columns {
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* Footer Styling */
+  footer {
+    background-color: #080c16;
+    color: #d6dae5;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  
+  .footer-trial button {
+    background-color: var(--color-accent);
+    color: #080c16;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .footer-trial button:hover {
+    background-color: var(--color-primary);
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .footer-links div h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1fe374;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #d6dae5;
+  }
+  
+  .footer-links ul li a:hover {
+    color: var(--color-accent);
+  }
+  
+  footer p {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: gray;
+    text-align: center;
+  }
+  
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin-right: -100px;
+  }
+
+  .information h5 {
+    width: 50%;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .info-ul {
+    width: 50%;
+    list-style: inside;
+    text-align: left;
+  }
+
+  .info-ul li {
+    text-align: left;
+    width: 100%;
+  }
+
+  #quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quote-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-container img {
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .quote-container h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .quote-container h5 {
+    text-align: center;
+    color: var(--color-primary);
+  }
