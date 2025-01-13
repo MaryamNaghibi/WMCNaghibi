@@ -50,7 +50,7 @@
 <main>
     <section class="section" id="about-me">
         <h2>Über mich</h2>
-        <p>Hallo! Mein Name ist Maryam, und ich bin leidenschaftlich interessiert an  "Technologie, Reisen und Tanzen". Geboren und aufgewachsen im Iran, Ich arbeitete  als Rechtanwältin und jetzt lerne ich Informatik ,begeistere mich ständig weiterzuentwickeln und neue Dinge zu lernen.</p>
+        <p>Hallo! Mein Name ist Maryam, und ich bin leidenschaftlich interessiert an  "Technologie, Reisen und Tanzen". Geboren und aufgewachsen im Iran. Ich arbeitete  als Rechtanwältin und jetzt lerne ich Informatik, begeistere mich ständig weiterzuentwickeln und neue Dinge zu lernen.</p>
     </section>
 
     <section class="section" id="hobbies">
@@ -63,12 +63,37 @@
         </ul>
     </section>
 
+    <section>
+        <h2>Meine Lieblingstiere</h2>
+        <h5>Zu meinen Lieblingstieren zählen unter anderem - in genau dieser Reihenfolge:</h5>
+        <ol>
+            <li>Kaninchen
+            </li>
+            <li>Hunde</li>
+            <li>Katzen</li>
+            <li>Meerschweinchen</li>
+        </ol>
+
+        <button id="btn" onclick="showImg()" type="button">
+            Bitte nicht hier klicken
+        </button>
+        <img style="visibility: hidden; transition: all 300ms ease-in-out;" id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4heyYqnN3vNcDtg-VkPgUSxWhq8wAZKqH95RK9ABmbDK0QT_PAfEWwbMFAXpnInLSdIyats85rjheGTNVlcvAy1C5OddABbD5nC1ZQ" alt="Kaninchen">
+    </section>
+
    
 </main>
 
 <footer>
     <p>©  Alle Rechte vorbehalten.</p>
 </footer>
+<script>
+    
+    function showImg(){
+        const img = document.getElementById("img");
+        console.log(img);
+        img.style.visibility = "visible";
+       }
 
+</script>
 </body>
 </html>
