@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Mich</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #fff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2, p {
+            color: black;
+
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        header img {
+            width: 150px;
+            height: 220px;
+        }
+
+        #about-me {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #about-me h2 {
+            font-weight: 300;
+            border: 2px dotted #e500c3; 
+            border-radius: 100px;
+            padding: 10px 15px;
+        }
+
+        #about-me h2>span {
+            background-color: yellow;
+            padding: 3px 7px;
+            border-radius: 50px;
+        }
+
+        #about-me div {
+            width: 80%;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        #hobbies div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hobbies div > h2 {
+            font-weight: 300;
+            border: 2px dotted #e500c3; 
+            border-radius: 100px;
+            padding: 10px 15px;
+            width: 80%;
+        }
+
+        #hobbies ul>div {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        #hobbies ul>div.reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 10px;
+        }
+
+        #hobbies div>li {
+            list-style: none;
+            margin-right: 25px;
+        }
+
+        #hobbies div.reverse>li {
+            margin-left: 25px;
+        }
+
+        #hobbies div>img {
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="./depositphotos_562897754-stock-illustration-smiley-stickman-question-mark-symbol.jpg" alt="">
+    <h1>Willkommen auf meiner persönlichen Webseite!</h1>
+    <p>Hier erfährst du mehr über mich und meine Interessen.</p>
+</header>
+
+<main>
+    <section class="section" id="about-me">
+        <div>
+            <h2><span>Ü</span>ber mich</h2>
+            <p>Hallo! Mein Name ist Maryam, und ich bin leidenschaftlich interessiert an  "Technologie, Reisen und Tanzen". Geboren und aufgewachsen im Iran. Ich arbeitete  als Rechtanwältin und jetzt lerne ich Informatik, begeistere mich ständig weiterzuentwickeln und neue Dinge zu lernen.</p>
+        </div>
+    </section>
+
+    <section class="section" id="hobbies">
+        <div>
+            <h2>Meine Hobbys</h2>
+            <ul>
+                <div>
+                    <li><strong>Reisen:</strong> Ich liebe es, neue Kulturen zu entdecken und die Welt zu erkunden.</li>
+                    <img src="https://www.tappersia.com/wp-content/uploads/bfi_thumb/cover-8-74129knwwuf2pd57m75ybeh0oykcswf40agjl0dm53k.jpg" alt="">
+                </div>
+                <div class="reverse">
+                    <li><strong>Fotografie:</strong> Wenn ich unterwegs bin, mache ich gerne Fotos, um Erinnerungen festzuhalten.</li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4heyYqnN3vNcDtg-VkPgUSxWhq8wAZKqH95RK9ABmbDK0QT_PAfEWwbMFAXpnInLSdIyats85rjheGTNVlcvAy1C5OddABbD5nC1ZQ" alt="Kaninchen">
+                </div>
+                <div>
+                    <li><strong>Kochen:</strong> In meiner Freizeit probiere ich gerne neue Rezepte aus.</li>
+                    <img src="https://www.persiantouring.com/wp-content/uploads/2015/10/ckelow-kebab.jpg" alt="">
+                </div>
+                <div class="reverse">
+                    <li><strong>Lesen:</strong> Bücher Wissenschaft, Biografien begeistern mich.</li>
+                    <img src="https://th.bing.com/th/id/OIP.QN3YGIiOtJ7n7TuiXPVmhAHaK_?rs=1&pid=ImgDetMain" alt="">
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section style="margin-left: 25px;">
+        <h2>Meine Lieblingstiere</h2>
+        <h5>Zu meinen Lieblingstieren zählen unter anderem - in genau dieser Reihenfolge:</h5>
+        <ol>
+            <li style="background-color: gold; width: min-content; padding: 7.5px; border-radius: 20px; margin-bottom: 8px;">Kaninchen
+            </li>
+            <li style="background-color: silver; width: min-content; padding: 7.5px; border-radius: 20px; margin-bottom: 8px;">Hunde</li>
+            <li style="background-color: rgb(203, 114, 58); width: min-content; padding: 7.5px; border-radius: 20px; margin-bottom: 8px;">Katzen</li>
+            <li style="background-color: lightgreen; width: min-content; padding: 7.5px; border-radius: 20px; margin-bottom: 8px;">Meerschweinchen</li>
+        </ol>
+        
+    </section>
+
+   
+</main>
+
+<footer>
+    <p>©  Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>
