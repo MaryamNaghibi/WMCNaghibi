@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Entfernungsmatrix mit Graph</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+  </head>
+  <body>
+    <h2>Städte hinzufügen</h2>
+
+    <div>
+      <input type="text" id="name" placeholder="Stadtname" />
+      <input
+        type="number"
+        id="lat"
+        placeholder="Breite (z.B. 35.68)"
+        step="any"
+      />
+      <input
+        type="number"
+        id="lon"
+        placeholder="Länge (z.B. 51.38)"
+        step="any"
+      />
+      <button onclick="addCity()">Hinzufügen</button>
+      <button onclick="buildMatrix()">Matrix berechnen</button>
+      <button onclick="resetAll()" class="btn-secondary">Zurück 🔙</button>
+    </div>
+
+    <h3>Liste der Städte:</h3>
+    <ul id="city-list"></ul>
+    <div id="matrix-table"></div>
+
+    <div style="margin-top: 2rem">
+      <label for="start">Start:</label>
+      <select id="start"></select>
+      <label for="ziel">Ziel:</label>
+      <select id="ziel"></select>
+      <button onclick="findShortestPath()">Kürzester Pfad ➡️</button>
+    </div>
+
+    <div id="result"></div>
+    <div id="network"></div>
+
+    <script src="matrix.js"></script>
+  </body>
+</html>
