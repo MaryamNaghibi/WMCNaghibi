@@ -1,99 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über Mich</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #6c5ce7;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1, h2 {
-            color: #6c5ce7;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>City Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="form-card">
+        <h2>🌍 <strong>City Explorer</strong></h2>
+        <input id="city-input" placeholder="Stadt eingeben..." />
+        <button onclick="searchCity()">Suchen</button>
+      </div>
 
-<header>
-    <h1>Willkommen auf meiner persönlichen Webseite!</h1>
-    <p>Hier erfährst du mehr über mich und meine Interessen.</p>
-</header>
+      <div id="weather" class="info-box" style="display: none"></div>
+      <div id="map" class="info-box" style="display: none"></div>
+      <div id="wiki" class="info-box" style="display: none"></div>
+      <button id="back-btn" style="display: none" onclick="resetPage()">
+        Zurück 🔙
+      </button>
+    </div>
 
-<main>
-    <section class="section" id="about-me">
-        <h2>Über mich</h2>
-        <p>Hallo! Mein Name ist Maryam, und ich bin leidenschaftlich interessiert an  "Technologie, Reisen und Tanzen". Geboren und aufgewachsen im Iran. Ich arbeitete  als Rechtanwältin und jetzt lerne ich Informatik, begeistere mich ständig weiterzuentwickeln und neue Dinge zu lernen.</p>
-    </section>
-
-    <section class="section" id="hobbies">
-        <h2>Meine Hobbys</h2>
-        <ul>
-            <li><strong>Reisen:</strong> Ich liebe es, neue Kulturen zu entdecken und die Welt zu erkunden.</li>
-            <li><strong>Fotografie:</strong> Wenn ich unterwegs bin, mache ich gerne Fotos, um Erinnerungen festzuhalten.</li>
-            <li><strong>Kochen:</strong> In meiner Freizeit probiere ich gerne neue Rezepte aus.</li>
-            <li><strong>Lesen:</strong> Bücher Wissenschaft, Biografien begeistern mich.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Meine Lieblingstiere</h2>
-        <h5>Zu meinen Lieblingstieren zählen unter anderem - in genau dieser Reihenfolge:</h5>
-        <ol>
-            <li>Kaninchen
-            </li>
-            <li>Hunde</li>
-            <li>Katzen</li>
-            <li>Meerschweinchen</li>
-        </ol>
-
-        <button id="btn" onclick="showImg()" type="button">
-            Bitte nicht hier klicken
-        </button>
-        <img style="visibility: hidden; transition: all 300ms ease-in-out;" id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4heyYqnN3vNcDtg-VkPgUSxWhq8wAZKqH95RK9ABmbDK0QT_PAfEWwbMFAXpnInLSdIyats85rjheGTNVlcvAy1C5OddABbD5nC1ZQ" alt="Kaninchen">
-    </section>
-
-   
-</main>
-
-<footer>
-    <p>©  Alle Rechte vorbehalten.</p>
-</footer>
-<script>
-    
-    function showImg(){
-        const img = document.getElementById("img");
-        console.log(img);
-        img.style.visibility = "visible";
-       }
-
-</script>
-</body>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
